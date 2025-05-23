@@ -1,0 +1,84 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.header{
+  background-color: #1b1e2a  ;
+  display: flex; /* Usamos flexbox para alinear elementos */
+  justify-content: space-between; /* Espacia el contenido entre los extremos */
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 10px; /* Espaciado interno */
+}
+
+
+.header__link{
+  color: #ccc;
+  text-align: center;
+  margin: 5px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.menu-toggle-abre {
+  display: none;
+  background: none;
+  border: 1px solid #fff;
+  font-size: 24px; /* Tamaño del icono del menú */
+  color: white; /* Color del icono */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.close-menu {
+  display: none;
+  background: none; /* Sin fondo */
+  border: none; /* Sin borde */
+  font-size: 24px; /* Tamaño del icono de cierre */
+  color: white; /* Color del texto */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+@media (max-width:768px){
+  .menu-toggle-abre{
+    display: inherit;
+    position: sticky;
+    right: 20px;
+  }
+
+  .close-menu{
+    display: inherit;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  }
+
+  .header__links-nav {
+  display: none; /* Oculta el menú por defecto */
+  position: fixed; /* Fija el menú en la pantalla */
+  top: 0; /* Posición en la parte superior */
+  right: 0; /* Alinea el menú a la derecha */
+  background-color: #000;
+  justify-content: center;
+  width: 100%; /* Ancho del menú */
+  height: 100%; /* Altura completa */
+  z-index: 10; /* Asegura que esté por encima de otros elementos */
+}
+
+.header__link{
+  font-size: 40px;
+  margin: 20px;
+  font-family: sans-serif;
+}
+
+.header__links-nav.active {
+  display: flex; /* Muestra el menú cuando tiene la clase 'active' */
+  flex-direction: column; /* Coloca los links en columna */
+}
+
+}
+

@@ -1,0 +1,8 @@
+.background {
+  position: relative;
+  background-image: url('./webb-dark.png');
+  background-repeat: repeat;
+  height: 100dvh;
+  height: 100%;
+}
+

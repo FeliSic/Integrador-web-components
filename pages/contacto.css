@@ -1,0 +1,19 @@
+@media (min-width: 960px){
+  .contact__title{
+     transform: translate(-50px, -200px);
+
+  }
+}
+
+.contact__title{
+  font-size: 40px;
+}
+
+.form__input-name, .form__input-email, .form__input-textarea{
+  background-color: #001;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+}
+
+

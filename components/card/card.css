@@ -1,0 +1,25 @@
+.card-container {
+    max-width: 200px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.7); /* Fondo gris semi-transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px; /* Espaciado externo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    position: relative; /* Para el z-index */
+    z-index: 1; /* Asegura que esté encima del fondo */
+}
+
+.container-card-mayor{
+    margin-top: -1500px; /* Ajusta según sea necesario */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+@media (min-width: 960px){
+    .container-card-mayor{
+    margin-top: -450px; /* Ajusta según sea necesario */
+    }
+}

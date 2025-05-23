@@ -1,0 +1,66 @@
+.section__form{
+  background-color: #1b1e2a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 585px;
+}
+
+
+
+.form__label, .form__input-name, .form__input-email, .form__input-textarea, .form__button{
+  font-family: sans-serif;
+  width: 100%;
+}
+
+.contact-title {
+    margin: 0; /* Elimina márgenes de los encabezados */
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+.form__input-name, .form__input-email{
+  height: 40px;
+  border-radius: 0;
+}
+
+.form__input-textarea{
+  height: 70px;
+}
+
+.form__button{
+  background-color: #3c98a2;
+  border:  none;
+  border-radius: 15px;
+  width: 100%;
+  padding: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+
+.form{
+  min-width: 300px;
+}
+
+@media (min-width: 960px) {
+
+  .section__form{
+    flex-direction: row;
+    justify-content: center;
+    padding: 0; /* Asegúrate de que no haya padding */
+    margin: 0; /* Asegúrate de que no haya margen */
+    height: 100vh;
+  }
+  
+  .form__button{
+    width: 10rem;
+  }
+
+  .contact-title{
+    padding: 60px;
+    transform: translateY(-200px); /* Mueve el título hacia arriba */
+  }
+}
